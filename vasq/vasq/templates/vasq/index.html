@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chat Interface</title>
+    <link rel="stylesheet" href="{% static 'vasq/style.css' %}?v=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+
+    <script>
+      const chatUrl = "{% url 'api_chat' %}";
+      const csrfToken = "{{ csrf_token }}";
+    </script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.0.0/marked.min.js"></script>
+    <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+  </head>
+  <body>
+    <div id="chat-container">
+      <header style="position: relative;">
+        <!-- Logo and Header -->
+        <div class="header-flex-container">
+          <img
+            src="{% static 'vasq/assets/kibr.png' %}"
+            alt="Brain logo"
+            class="header-logo"
+          />
+          <h1>VasQ</h1>
+        </div>
+        
+        <!-- Export to Text Button -->
+        <button id="export-chat" class="btn btn-primary export-button" title="Export Text">
+          <i class="fas fa-file-alt"></i>
+        </button>
+        
+        <!-- Export to PDF Button -->
+        <button id="export-pdf" class="btn btn-primary export-button" title="Export PDF">
+          <i class="fas fa-file-pdf"></i>
+        </button>
+      </header>
+      
+      <div id="messages-container">
+        <div id="messages"></div>
+      </div>
+      
+      <footer>
+        <form id="chat-form" method="post" enctype="multipart/form-data">
+          <div class="footer-flex-container">
+            <!-- Input Box -->
+            <input
+              type="text"
+              id="message-input"
+              name="message"
+              placeholder="Ask VasQ about brain vasculature..."
+              autocomplete="off"
+            />
+            <!-- Submit Button -->
+            <button type="submit" id="send-message">Send</button>
+          </div>
+        </form>
+      </footer>
+    </div>
+    
+    <script src="{% static 'vasq/script.js' %}"></script>
+  </body>
+</html>
