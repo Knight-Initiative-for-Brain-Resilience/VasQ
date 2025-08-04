@@ -1,0 +1,25 @@
+FROM continuumio/miniconda3
+
+# Set working directory
+WORKDIR /app
+
+# Copy your code and requirements
+COPY . /app
+
+# Create environment and install Flask
+RUN conda create -n kg_env python=3.10 -y && \
+    conda run -n kg_env pip install --upgrade pip && \
+    conda run -n kg_env pip install flask
+
+# Install from requirements.txt into the conda env
+RUN conda run -n kg_env pip install -r requirements.txt
+
+# Set environment variables
+ENV CONDA_DEFAULT_ENV=kg_env
+ENV PATH=/opt/conda/envs/kg_env/bin:$PATH
+
+# Set Flask app
+ENV FLASK_APP=api.py
+
+# Run the API
+CMD ["conda", "run", "-n", "kg_env", "flask", "run", "--host=0.0.0.0", "--port=5005"]
