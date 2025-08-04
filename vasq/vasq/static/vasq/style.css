@@ -1,0 +1,202 @@
+:root {
+  --clr-light: #ffffff; /* White */
+  --clr-medium: #8ab4c4; /* Medium Blue */
+  --clr-dark: #32175a; /* Dark Purple */
+
+  --clr-export: #dfeaee; /* Light Blue */
+  --clr-highlight: #eef6f8; /* Lighest Blue */
+  --clr-send-hover: #5b3d8b; /* Medium Purple */
+
+  --background: linear-gradient(135deg, var(--clr-light) 0%, var(--clr-medium) 100%);
+
+  --ff-all: "Satoshi", sans-serif;
+}
+
+/* MAIN */
+
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: var(--background);
+  font-family: var(--ff-all);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CHAT */
+
+#chat-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: var(--background);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#message-input {
+  flex-grow: 1;
+  padding: 15px;
+  border-radius: 20px;
+  border: 0.5px solid var(--clr-light);
+  font-size: 16px;
+  font-family: var(--ff-all);
+  background-color: var(--background);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#message-input::placeholder {
+  color: var(--clr-light);
+}
+
+#message-input {
+  color: var(--clr-light);
+}
+
+#message-input:focus {
+  outline: none;
+  border-color: var(--clr-light);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+/* HEADER */
+
+header {
+  background-color: var(--background);
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+header h1 {
+  font-size: 2.2em;
+  color: var(--clr-dark);
+  font-weight: bold;
+  font-family: var(--ff-all);
+}
+
+.header-flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 8px;
+  margin-top: -10px;
+}
+
+img.header-logo {
+  height: 35px;
+  width: auto;
+}
+
+/* EXPORT BUTTONS */
+
+.export-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    color: var(--clr-export);
+}
+
+.export-button:hover i {
+    color: var(--clr-highlight);
+}
+
+.export-button {
+    position: absolute;
+    top: 25px;
+}
+
+#export-chat {
+    right: 60px;
+}
+
+#export-pdf {
+    right: 0px;
+}
+
+/* MESSAGES */
+
+#messages-container {
+  flex-grow: 1;
+  overflow-y: auto;
+  background-color: var(--background);
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+#messages {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  word-wrap: break-word;
+}
+
+.system-message, .user-message {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  max-width: 75%;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  line-height: 1.0;
+}
+
+.user-message {
+  font-family: var(--ff-all);
+  background-color: var(--clr-highlight);
+  color: var(--clr-medium);
+  align-self: flex-end;
+  border-radius: 15px 15px 0 15px;
+}
+
+.system-message {
+  background-color: var(--clr-highlight);
+  color: var(--clr-dark);
+  align-self: flex-start;
+  border-radius: 15px 15px 15px 0;
+}
+
+/* SEND BUTTON */
+
+#send-message {
+  padding: 15px;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--clr-dark);
+  color: var(--clr-medium);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  font-family: var(--ff-all);
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#send-message:hover {
+  background-color: var(--clr-send-hover);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); 
+}
+
+/* FOOTER */
+
+.footer-flex-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-flex-container label {
+  margin-right: 10px;
+  cursor: pointer;
+}
