@@ -1,3 +1,24 @@
+# 🧬 About VasQ
+
+**VasQ** is a custom AI-powered chat system designed to support complex biomedical reasoning, particularly around vascular biology and drug delivery in the human brain. It builds on the GPT-4 API and integrates three primary data sources:
+
+- **Vascular snRNA-seq dataset**: Region- and cell type–specific gene expression data derived from a human vascular single-nucleus RNA-seq atlas, processed using *Cell2Sentence*.
+- **SPOKE knowledge graph (KG-RAG)**: A biomedical knowledge graph of curated biological relationships (genes, proteins, drugs, diseases, etc.), used via a retrieval-augmented generation (RAG) system to inject structured context into GPT-4.
+- **Google Custom Search**: Live web search to retrieve up-to-date biomedical information from the broader internet.
+
+These components work together to support **multi-hop investigations** across gene expression, disease associations, and pharmacological mechanisms. For example, users can query transporters enriched in disease-relevant brain regions and trace their roles in blood-brain barrier (BBB) transport and drug uptake.
+
+Key capabilities include:
+
+- **Natural language querying** of transcriptomic data across 17 vascular cell types and 41 brain regions.
+- **Dynamic knowledge graph retrieval** to surface disease and mechanism-related insights from SPOKE.
+- **Web search integration** for real-time external references.
+- **Zero training required** — fully operational out of the box via API keys and Docker.
+
+VasQ is ideal for generating hypotheses around **BBB-targeted therapeutics**, understanding **region-specific vascular biology**, and identifying **molecular pathways** for rational drug design.
+
+> ℹ️ A full research paper describing VasQ’s design and scientific findings is forthcoming.
+
 # 🧠 VasQ Setup Guide
 
 Welcome! Follow the steps below to get your VasQ environment up and running. This project uses Docker and Django, and requires some basic API key setup.
