@@ -26,7 +26,7 @@ Welcome! Follow the steps below to get your VasQ environment up and running. Thi
 
 ---
 
-## 🔑 Add Your API Keys
+## 🔑 Add Your Keys
 
 Depending on your account type or system setup, these steps may vary slightly. Choose the method that best fits your context.
 
@@ -91,7 +91,8 @@ Depending on your account type or system setup, these steps may vary slightly. C
 
 ---
 
-### 🔒 Generate a Django Secret Key
+<details>
+<summary>🔒 <strong>Django Secret Key</strong></summary>
 
 Run the following commands in your terminal:
 
@@ -100,6 +101,7 @@ python3 -m venv venv
 source venv/bin/activate
 pip install django
 python -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())"
+deactivate
 ```
 
 Copy the generated key and add it to your `.env-shared` file.
