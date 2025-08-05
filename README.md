@@ -157,7 +157,9 @@ If you're using `nano`, press:
 
 VasQ should now be live on your local machine. Happy exploring!
 
-## 🙏 Acknowledgements
+---
+
+# 🙏 Acknowledgements
 
 This project builds on the work of several open-source efforts. In particular, we adapted and extended components from the following repositories:
 
