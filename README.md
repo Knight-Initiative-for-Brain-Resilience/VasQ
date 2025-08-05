@@ -32,7 +32,7 @@ Follow the steps below to get your VasQ environment up and running. This project
 1. [Download for your OS →](https://docs.docker.com/desktop/)
 2. Open the Docker Desktop app
 
-**Clone this repository**
+**Clone this repository**  
 
 From terminal:
 
@@ -41,7 +41,17 @@ From terminal:
    cd VasQ
    ```
 
-**Open the shared environment file**
+**Download large data files**  
+
+From terminal:
+
+   ```bash
+   brew install git-lfs
+   git lfs install
+   git lfs pull
+   ```
+
+**Open the shared environment file**  
 
    ```bash
    nano .env-shared
