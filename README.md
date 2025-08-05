@@ -25,19 +25,20 @@ Follow the steps below to get your VasQ environment up and running. This project
 
 ---
 
-## 🚀 Requirements
+## 🚀 Initial Setup
 
 1. **Install Docker Desktop**  
    [Download for your OS →](https://docs.docker.com/desktop/)
+   Open the Docker Desktop app
 
-2. **Clone this repository**
+3. **Clone this repository**
 
    ```bash
    git clone https://github.com/Knight-Initiative-for-Brain-Resilience/VasQ.git
    cd VasQ
    ```
 
-3. **Open the shared environment file**
+4. **Open the shared environment file**
 
    ```bash
    nano .env-shared
