@@ -61,14 +61,14 @@ Depending on your account type or system setup, these steps may vary slightly. C
 1. Log in to your [Google Account](https://accounts.google.com)  
 2. Go to [Google Custom Search API](https://console.cloud.google.com/marketplace/product/google/customsearch.googleapis.com)  
 3. Create or select a project  
-4. Click **Enable**, then **Manage**  
+4. Click **Enable** 
 5. In the sidebar, go to **Credentials**  
 6. Click `+ Create credentials` → **API key**  
 7. Click **Edit API key**  
 8. Under **Application restrictions**, choose **None**  
 9. Under **API restrictions**, select **Restrict key**  
 10. From the dropdown, choose **Custom Search API** → Click **OK**  
-11. Click **Save**, then copy the API key into `.env-shared`
+11. Click **Save**, **Show key**, then copy the API key into `.env-shared`
 
 </details>
 
