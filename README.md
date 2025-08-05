@@ -28,7 +28,7 @@ Follow the steps below to get your VasQ environment up and running. This project
 ## 🚀 Initial Setup
 
 1. **Install Docker Desktop**  
-   [Download for your OS →](https://docs.docker.com/desktop/)
+   [Download for your OS →](https://docs.docker.com/desktop/)  
    Open the Docker Desktop app
 
 3. **Clone this repository**
