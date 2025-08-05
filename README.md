@@ -94,7 +94,7 @@ Depending on your account type or system setup, these steps may vary slightly. C
 <details>
 <summary>🔒 <strong>Django Secret Key</strong></summary>
 
-Run the following commands in your terminal:
+Open a new terminal window and navigate to your project folder. Enter the following:
 
 ```bash
 python3 -m venv venv
@@ -104,7 +104,7 @@ python -c "from django.core.management.utils import get_random_secret_key; print
 deactivate
 ```
 
-Copy the generated key and add it to your `.env-shared` file.
+Copy the generated key and add it to your `.env-shared` file. Close this window.
 
 </details>
 
