@@ -53,7 +53,7 @@ Follow the steps below to get your VasQ environment up and running. This project
    nano .env-shared
    ```
 
-   This file contains placeholder API keys and secrets you’ll need to replace with your own.
+   This file contains placeholder API keys you’ll need to replace with your own.
 
 ---
 
