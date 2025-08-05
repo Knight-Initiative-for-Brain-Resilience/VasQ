@@ -72,8 +72,9 @@ Depending on your account type or system setup, these steps may vary slightly. C
 1. Log in to your org account  
 2. Visit [Organization API Keys](https://platform.openai.com/settings/organization/api-keys)  
 3. Click `+ Create new secret key`  
-4. Name it, choose the appropriate project, keep **All permissions**  
-5. Copy the key into your `.env-shared` file
+4. Name it, choose the appropriate project, keep **All permissions**
+5. Click `Create secret key`
+6. Copy the key into your `.env-shared` file
 
 </details>
 
