@@ -106,6 +106,8 @@ deactivate
 
 Copy the generated key and add it to your `.env-shared` file.
 
+</details>
+
 ---
 
 ## 💾 Save Your `.env-shared` File
