@@ -17,11 +17,11 @@ Key capabilities include:
 
 VasQ is ideal for generating hypotheses around **BBB-targeted therapeutics**, understanding **region-specific vascular biology**, and identifying **molecular pathways** for rational drug design.
 
-> ℹ️ A full research paper describing VasQ’s design and scientific findings is forthcoming.
+> ℹ️ A paper including descriptions VasQ’s design and capabilities is forthcoming.
 
 # 🧠 VasQ Setup Guide
 
-Welcome! Follow the steps below to get your VasQ environment up and running. This project uses Docker and Django, and requires some basic API key setup.
+Follow the steps below to get your VasQ environment up and running. This project uses Docker and Django, and requires some basic API key setup.
 
 ---
 
