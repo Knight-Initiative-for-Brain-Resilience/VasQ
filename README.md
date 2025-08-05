@@ -154,6 +154,8 @@ If you're using `nano`, press:
    docker-compose up
    ```
 
+   If a pop-up window appears, click `Allow`.
+
 2. Open your browser and visit:  
    [http://127.0.0.1:8000/vasq/](http://127.0.0.1:8000/vasq/)
 
