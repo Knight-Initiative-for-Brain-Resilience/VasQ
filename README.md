@@ -156,3 +156,12 @@ If you're using `nano`, press:
 ## ✅ You're Ready!
 
 VasQ should now be live on your local machine. Happy exploring!
+
+## 🙏 Acknowledgements
+
+This project builds on the work of several open-source efforts. In particular, we adapted and extended components from the following repositories:
+
+- [**scChat**](https://github.com/li-group/scChat): A chat-based system for querying single-cell RNA-seq datasets, which provided the foundational architecture for VasQ's interface and agent design.
+- [**KG-RAG**](https://github.com/BaranziniLab/KG_RAG): A retrieval-augmented generation (RAG) system for biomedical knowledge graphs, which informed the implementation of VasQ's knowledge graph querying module using SPOKE.
+
+We are grateful to the developers of these projects for their contributions to the open-source community.
