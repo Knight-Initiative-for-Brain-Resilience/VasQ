@@ -34,6 +34,8 @@ Follow the steps below to get your VasQ environment up and running. This project
 
 **Clone this repository**  
 
+Open a terminal:
+
    ```bash
    git clone https://github.com/Knight-Initiative-for-Brain-Resilience/VasQ.git
    cd VasQ
