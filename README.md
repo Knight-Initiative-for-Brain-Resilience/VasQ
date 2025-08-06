@@ -126,20 +126,22 @@ Depending on your account type or system setup, these steps may vary slightly. C
 
 ---
 
-## 💾 Add OpenAI key to Flask environment file
+<details>
+<summary>⚗️ <strong>Add Keys to Flask and Save</strong></summary>
 
-Copy just the OpenAI key  
-If you're using `nano`, press:  
-`Ctrl + X`, then `Y`, then `Enter`  
-Navigate to the kg_rag folder:  
-cd kg_rag  
-nano .gpt_config.env  
-Paste the key where the temporary key is  
-If you're using `nano`, press:    
-`Ctrl + X`, then `Y`, then `Enter`  
-Return to the vasq folder:  
-cd ..  
-cd vasq  
+1. Copy the OpenAI API key 
+2. Save .env-shared: `Ctrl + X`, `Y`, `Enter`
+3. Open the Flask key file:
+
+   ```bash
+   cd kg_rag
+   nano .gpt_config.env
+   ```
+   
+6. Paste the key over the temporary key
+7. Save .gpt_config.env: `Ctrl + X`, `Y`, `Enter`
+
+</details>
 
 ---
 
@@ -148,6 +150,7 @@ cd vasq
 1. Build and run the application:
 
    ```bash
+   cd ../vasq
    docker-compose build --no-cache
    docker-compose up
    ```
