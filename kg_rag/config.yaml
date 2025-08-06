@@ -19,7 +19,7 @@ VECTOR_DB_SENTENCE_EMBEDDING_MODEL : 'sentence-transformers/all-MiniLM-L6-v2'
 NODE_CONTEXT_PATH : 'data/context_of_disease_which_has_relation_to_genes.csv'
 
 # Also, GPT '.env' file should contain values for API_KEY
-GPT_CONFIG_FILE : '../.env-shared'
+GPT_CONFIG_FILE : '.gpt_config.env'
 GPT_API_TYPE : 'open_ai'
 
 # Path for caching LLM model files
