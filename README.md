@@ -53,7 +53,7 @@ Open a terminal:
 
 ## 🔑 Add Your Keys
 
-Depending on your account type or system setup, these steps may vary slightly. Choose the method that best fits your context.
+Depending on your account type or system setup, these steps may vary slightly.
 
 <details>
 <summary>⚗️ <strong>OpenAI API Key (Flask) </strong></summary>  
@@ -150,6 +150,7 @@ Depending on your account type or system setup, these steps may vary slightly. C
 - Copy your **Search engine ID**
 
 2. Paste the ID into `.env-shared` after `SEARCH_ENGINE_ID=`
+3. Save Django environment file: `Ctrl + X`, `Y`, `Enter`
 
 </details>
 
