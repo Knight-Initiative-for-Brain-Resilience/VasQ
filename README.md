@@ -56,8 +56,8 @@ Open a terminal:
 Depending on your account type or system setup, these steps may vary slightly. Choose the method that best fits your context.
 
 <details>
-<summary>⚗️ <strong>OpenAI API Key (Flask) </strong></summary>
-   
+<summary>⚗️ <strong>OpenAI API Key (Flask) </strong></summary>  
+  
 1. Open the Flask environment file:
 
    ```bash
@@ -93,7 +93,7 @@ Depending on your account type or system setup, these steps may vary slightly. C
 
 <details>
 <summary>🧠 <strong>OpenAI API Key (Django)</strong></summary>
-   
+
 1. Open Django environment file:
 
    ```bash
@@ -108,13 +108,12 @@ Depending on your account type or system setup, these steps may vary slightly. C
 ---
 
 <details>
-<summary>🔍 <strong>Google Custom Search API Key</strong></summary>
-
-   
+<summary>🔍 <strong>Google Custom Search API Key</strong></summary>  
+  
 > ⚠️ Google offers a generous free trial for this API.
 
 1. Generate Google Custom Search API Key:
-   
+
 - Log in to your [Google Account](https://accounts.google.com)  
 - Go to [Google Custom Search API](https://console.cloud.google.com/marketplace/product/google/customsearch.googleapis.com)  
 - Create or select a project  
@@ -135,9 +134,8 @@ Depending on your account type or system setup, these steps may vary slightly. C
 ---
 
 <details>
-<summary>🌐 <strong>Programmable Search Engine ID</strong></summary>
-
-   
+<summary>🌐 <strong>Programmable Search Engine ID</strong></summary>  
+  
 1. Generate Programmable Search Engine ID:
    
 - Go to the [Programmable Search Control Panel](https://programmablesearchengine.google.com/controlpanel/all)
