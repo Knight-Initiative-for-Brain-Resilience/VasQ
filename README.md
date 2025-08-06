@@ -49,14 +49,6 @@ Open a terminal:
    git lfs pull
    ```
 
-**Open the Django environment file**  
-
-   ```bash
-   nano .env-shared
-   ```
-
-   This file contains placeholder API keys you’ll need to replace with your own.
-
 ---
 
 ## 🔑 Add Your Keys
@@ -64,25 +56,52 @@ Open a terminal:
 Depending on your account type or system setup, these steps may vary slightly. Choose the method that best fits your context.
 
 <details>
-<summary>🧠 <strong>OpenAI API Key</strong></summary>
+<summary>⚗️ <strong>OpenAI API Key (Flask) </strong></summary>
+
+1. Open the Flask environment file:
+
+   ```bash
+   cd kg_rag
+   nano .gpt_config.env
+   ```
+
+2. Generate your OpenAI API key:
 
 #### Individual Users
 
-1. Create or sign in: [OpenAI Account](https://auth.openai.com/create-account)  
-2. Go to [API Keys](https://platform.openai.com/api-keys)  
-3. Click `+ Create new secret key`  
-4. Name it, keep **Default project** and **All permissions**
-5. Click `Create secret key`
-6. Copy the key into your `.env-shared` file after `OPENAI_API_KEY=`
+- Create or sign in: [OpenAI Account](https://auth.openai.com/create-account)  
+- Go to [API Keys](https://platform.openai.com/api-keys)  
+- Click `+ Create new secret key`  
+- Name it, keep **Default project** and **All permissions**
+- Click `Create secret key` and copy the key
 
 #### Organization Accounts
 
-1. Log in to your org account  
-2. Visit [Organization API Keys](https://platform.openai.com/settings/organization/api-keys)  
-3. Click `+ Create new secret key`  
-4. Name it, choose the appropriate project, keep **All permissions**
-5. Click `Create secret key`
-6. Copy the key into your `.env-shared` file after `OPENAI_API_KEY=`
+- Log in to your org account  
+- Visit [Organization API Keys](https://platform.openai.com/settings/organization/api-keys)  
+- Click `+ Create new secret key`  
+- Name it, choose the appropriate project, keep **All permissions**
+- Click `Create secret key` and copy the key
+
+3. Paste key into `.gpt_config.env` after `API_KEY=`
+4. Copy key to clipboard for use in Django environment file
+5. Save Flask environment file: `Ctrl + X`, `Y`, `Enter`
+
+</details>
+
+---
+
+<details>
+<summary>🧠 <strong>OpenAI API Key (Django)</strong></summary>
+
+1. Open Django environment file:
+
+   ```bash
+   cd ..
+   nano .env-shared
+   ```
+   
+2. Paste the OpenAI API key into `.env-shared` after `OPENAI_API_KEY=`
 
 </details>
 
@@ -93,18 +112,22 @@ Depending on your account type or system setup, these steps may vary slightly. C
 
 > ⚠️ Google offers a generous free trial for this API.
 
-1. Log in to your [Google Account](https://accounts.google.com)  
-2. Go to [Google Custom Search API](https://console.cloud.google.com/marketplace/product/google/customsearch.googleapis.com)  
-3. Create or select a project  
-4. Click **Enable** 
-5. In the sidebar, go to **Credentials**  
-6. Click `+ Create credentials` → **API key**  
-7. Click **Edit API key**  
-8. Under **Application restrictions**, choose **None**  
-9. Under **API restrictions**, select **Restrict key**  
-10. From the dropdown, choose **Custom Search API** → Click **OK**  
-11. Click **Save** and on the next page **Show key**
-12. Copy the API key into `.env-shared` after `GOOGLE_API_KEY=`
+1. Generate Google Custom Search API Key:
+   
+- Log in to your [Google Account](https://accounts.google.com)  
+- Go to [Google Custom Search API](https://console.cloud.google.com/marketplace/product/google/customsearch.googleapis.com)  
+- Create or select a project  
+- Click **Enable** 
+- In the sidebar, go to **Credentials**  
+- Click `+ Create credentials` → **API key**  
+- Click **Edit API key**  
+- Under **Application restrictions**, choose **None**  
+- Under **API restrictions**, select **Restrict key**  
+- From the dropdown, choose **Custom Search API** → Click **OK**  
+- Click **Save**
+- On the next page **Show key** and copy it
+
+2. Paste the API key into `.env-shared` after `GOOGLE_API_KEY=`
 
 </details>
 
@@ -113,35 +136,20 @@ Depending on your account type or system setup, these steps may vary slightly. C
 <details>
 <summary>🌐 <strong>Programmable Search Engine ID</strong></summary>
 
-1. Go to the [Programmable Search Control Panel](https://programmablesearchengine.google.com/controlpanel/all)  
-2. Click **Add**  
-3. Name your engine  
-4. For "What to search?", select **Search the entire web**  
-5. Leave “Search settings” unchecked  
-6. Fill out the CAPTCHA and click **Create**  
-7. On the next page, go to **Back to all engines**  
-8. Click on the engine you just created  
-9. Find your ID in the **Overview** section under **Basic**
-10. Copy your **Search engine ID** into `.env-shared` after `SEARCH_ENGINE_ID=`
+1. Generate Programmable Search Engine ID:
 
-</details>
+- Go to the [Programmable Search Control Panel](https://programmablesearchengine.google.com/controlpanel/all)
+- Click **Add**  
+- Name your engine  
+- For "What to search?", select **Search the entire web**  
+- Leave “Search settings” unchecked  
+- Fill out the CAPTCHA and click **Create**  
+- On the next page, go to **Back to all engines**  
+- Click on the engine you just created  
+- Find your ID in the **Overview** section under **Basic**
+- Copy your **Search engine ID**
 
----
-
-<details>
-<summary>⚗️ <strong>Add Keys to Flask and Save</strong></summary>
-
-1. Copy the OpenAI API key 
-2. Save .env-shared: `Ctrl + X`, `Y`, `Enter`
-3. Open the Flask key file:
-
-   ```bash
-   cd kg_rag
-   nano .gpt_config.env
-   ```
-   
-6. Paste the key over the temporary key
-7. Save .gpt_config.env: `Ctrl + X`, `Y`, `Enter`
+2. Paste the ID into `.env-shared` after `SEARCH_ENGINE_ID=`
 
 </details>
 
