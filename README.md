@@ -161,7 +161,7 @@ Depending on your account type or system setup, these steps may vary slightly.
 1. Build and run the application:
 
    ```bash
-   cd ../vasq
+   cd vasq
    docker-compose build --no-cache
    docker-compose up
    ```
