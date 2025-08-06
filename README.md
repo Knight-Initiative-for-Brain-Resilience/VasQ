@@ -128,18 +128,18 @@ Depending on your account type or system setup, these steps may vary slightly. C
 
 ## 💾 Add OpenAI key to Flask environment file
 
-Copy just the OpenAI key
+Copy just the OpenAI key  
 If you're using `nano`, press:  
-`Ctrl + X`, then `Y`, then `Enter`
-Navigate to the kg_rag folder:
-cd kg_rag
-nano .gpt_config.env
-Paste the key where the temporary key is
-If you're using `nano`, press:  
-`Ctrl + X`, then `Y`, then `Enter`
-Return to the vasq folder:
-cd ..
-cd vasq
+`Ctrl + X`, then `Y`, then `Enter`  
+Navigate to the kg_rag folder:  
+cd kg_rag  
+nano .gpt_config.env  
+Paste the key where the temporary key is  
+If you're using `nano`, press:    
+`Ctrl + X`, then `Y`, then `Enter`  
+Return to the vasq folder:  
+cd ..  
+cd vasq  
 
 ---
 
