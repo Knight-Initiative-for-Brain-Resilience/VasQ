@@ -73,7 +73,7 @@ Depending on your account type or system setup, these steps may vary slightly. C
 3. Click `+ Create new secret key`  
 4. Name it, keep **Default project** and **All permissions**
 5. Click `Create secret key`
-6. Copy the key into your `.env-shared` file
+6. Copy the key into your `.env-shared` file after `OPENAI_API_KEY=`
 
 #### Organization Accounts
 
@@ -82,7 +82,7 @@ Depending on your account type or system setup, these steps may vary slightly. C
 3. Click `+ Create new secret key`  
 4. Name it, choose the appropriate project, keep **All permissions**
 5. Click `Create secret key`
-6. Copy the key into your `.env-shared` file
+6. Copy the key into your `.env-shared` file after `OPENAI_API_KEY=`
 
 </details>
 
@@ -103,7 +103,8 @@ Depending on your account type or system setup, these steps may vary slightly. C
 8. Under **Application restrictions**, choose **None**  
 9. Under **API restrictions**, select **Restrict key**  
 10. From the dropdown, choose **Custom Search API** → Click **OK**  
-11. Click **Save**, **Show key**, then copy the API key into `.env-shared`
+11. Click **Save** and on the next page **Show key**
+12. Copy the API key into `.env-shared` after `GOOGLE_API_KEY=`
 
 </details>
 
@@ -120,7 +121,8 @@ Depending on your account type or system setup, these steps may vary slightly. C
 6. Fill out the CAPTCHA and click **Create**  
 7. On the next page, go to **Back to all engines**  
 8. Click on the engine you just created  
-9. In the **Overview** section under **Basic**, copy your **Search engine ID** and paste it into `.env-shared`
+9. Find your ID in the **Overview** section under **Basic**
+10. Copy your **Search engine ID** into `.env-shared` after `SEARCH_ENGINE_ID=`
 
 </details>
 
