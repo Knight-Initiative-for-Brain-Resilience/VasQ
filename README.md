@@ -109,6 +109,7 @@ Depending on your account type or system setup, these steps may vary slightly. C
 
 <details>
 <summary>🔍 <strong>Google Custom Search API Key</strong></summary>
+
    
 > ⚠️ Google offers a generous free trial for this API.
 
@@ -135,6 +136,7 @@ Depending on your account type or system setup, these steps may vary slightly. C
 
 <details>
 <summary>🌐 <strong>Programmable Search Engine ID</strong></summary>
+
    
 1. Generate Programmable Search Engine ID:
    
