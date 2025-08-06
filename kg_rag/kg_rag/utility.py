@@ -11,7 +11,7 @@ from tenacity import retry, stop_after_attempt, wait_random_exponential
 
 config_file = config_data['GPT_CONFIG_FILE']
 load_dotenv(config_file)
-api_key = os.environ.get('OPENAI_API_KEY')
+api_key = os.environ.get('API_KEY')
 api_version = os.environ.get('API_VERSION')
 resource_endpoint = os.environ.get('RESOURCE_ENDPOINT')
 openai.api_type = config_data['GPT_API_TYPE']
