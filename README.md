@@ -25,6 +25,10 @@ Follow the steps below to get your VasQ environment up and running. This project
 
 ---
 
+## Initial Data Processing (Optional)
+
+process_c2s.py is used to process the raw data (.arrow) files. The outputs are already included in the project folder, so this step does not need to be repeated. The raw data files are also only accessible to lab members.
+
 ## 🚀 Initial Setup
 
 **Install Docker Desktop**  
